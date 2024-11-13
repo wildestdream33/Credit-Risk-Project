@@ -1,0 +1,167 @@
+Initial Shape: Rows: 307511, Columns: 122
+Shape after dropping columns: Rows: 307511, Columns: 72
+Shape after dropping missing rows: Rows: 244280, Columns: 72
+Shape after removing 'XNA' in CODE_GENDER: Rows: 244276, Columns: 72
+Shape after one-hot encoding: Rows: 244276, Columns: 161
+Shape after standardization: Rows: 244276, Columns: 161
+Initial Shape: Rows: 307511, Columns: 122
+Shape after dropping columns: Rows: 307511, Columns: 72
+Shape after dropping missing rows: Rows: 244280, Columns: 72
+Shape after removing 'XNA' in CODE_GENDER: Rows: 244276, Columns: 72
+Shape after one-hot encoding: Rows: 244276, Columns: 161
+Shape after standardization: Rows: 244276, Columns: 161
+Variance Before PCA: 22.557886381845606
+Initial Shape: Rows: 307511, Columns: 122
+Shape after dropping columns: Rows: 307511, Columns: 72
+Shape after dropping missing rows: Rows: 244280, Columns: 72
+Shape after removing 'XNA' in CODE_GENDER: Rows: 244276, Columns: 72
+Shape after one-hot encoding: Rows: 244276, Columns: 161
+Shape after standardization: Rows: 244276, Columns: 161
+Variance Before PCA: 22.557886381845606
+Initial Shape: Rows: 307511, Columns: 122
+Shape after dropping columns: Rows: 307511, Columns: 72
+Shape after dropping missing rows: Rows: 244280, Columns: 72
+Shape after removing 'XNA' in CODE_GENDER: Rows: 244276, Columns: 72
+Shape after one-hot encoding: Rows: 244276, Columns: 161
+Shape after standardization: Rows: 244276, Columns: 161
+Variance Before PCA: 22.557886381845606
+Initial Shape: Rows: 307511, Columns: 122
+Shape after dropping columns: Rows: 307511, Columns: 72
+Shape after dropping missing rows: Rows: 244280, Columns: 72
+Shape after removing 'XNA' in CODE_GENDER: Rows: 244276, Columns: 72
+Shape after one-hot encoding: Rows: 244276, Columns: 161
+Shape after standardization: Rows: 244276, Columns: 161
+Variance Before PCA: 22.557886381845606
+Initial Shape: Rows: 307511, Columns: 122
+Shape after dropping columns: Rows: 307511, Columns: 72
+Shape after dropping missing rows: Rows: 244280, Columns: 72
+Shape after removing 'XNA' in CODE_GENDER: Rows: 244276, Columns: 72
+Shape after one-hot encoding: Rows: 244276, Columns: 162
+Basic Statistics Before Standardization:
+        CNT_CHILDREN  ...  AMT_REQ_CREDIT_BUREAU_YEAR
+count  244276.000000  ...               244276.000000
+mean        0.424458  ...                    1.901464
+std         0.726917  ...                    1.859787
+min         0.000000  ...                    0.000000
+25%         0.000000  ...                    0.000000
+50%         0.000000  ...                    1.000000
+75%         1.000000  ...                    3.000000
+max        19.000000  ...                   23.000000
+
+[8 rows x 27 columns]
+Basic Statistics After Standardization:
+       CNT_CHILDREN  ...  AMT_REQ_CREDIT_BUREAU_YEAR
+count  2.442760e+05  ...                2.442760e+05
+mean   1.564918e-17  ...               -4.479506e-17
+std    1.000002e+00  ...                1.000002e+00
+min   -5.839169e-01  ...               -1.022412e+00
+25%   -5.839169e-01  ...               -1.022412e+00
+50%   -5.839169e-01  ...               -4.847145e-01
+75%    7.917583e-01  ...                5.906797e-01
+max    2.555391e+01  ...                1.134462e+01
+
+[8 rows x 27 columns]
+Variance Before PCA: 22.557886381845606
+Loaded dataset preview:
+   SK_ID_CURR  TARGET  ... AMT_REQ_CREDIT_BUREAU_QRT AMT_REQ_CREDIT_BUREAU_YEAR
+0      100002       1  ...                       0.0                        1.0
+1      100003       0  ...                       0.0                        0.0
+2      100004       0  ...                       0.0                        0.0
+3      100006       0  ...                       NaN                        NaN
+4      100007       0  ...                       0.0                        0.0
+
+[5 rows x 122 columns]
+--------------------------------------------------------------------------------
+Initial Shape of the Dataset:
+Rows: 307511, Columns: 122
+--------------------------------------------------------------------------------
+Shape after dropping high-missing columns:
+Rows: 307511, Columns: 72
+--------------------------------------------------------------------------------
+Shape after dropping missing rows:
+Rows: 244280, Columns: 72
+--------------------------------------------------------------------------------
+Shape after removing 'XNA' in CODE_GENDER:
+Rows: 244276, Columns: 72
+--------------------------------------------------------------------------------
+Shape after one-hot encoding:
+Rows: 244276, Columns: 162
+--------------------------------------------------------------------------------
+Basic Statistics After Standardization:
+       CNT_CHILDREN  ...  AMT_REQ_CREDIT_BUREAU_YEAR
+count  2.442760e+05  ...                2.442760e+05
+mean   1.564918e-17  ...               -4.479506e-17
+std    1.000002e+00  ...                1.000002e+00
+min   -5.839169e-01  ...               -1.022412e+00
+25%   -5.839169e-01  ...               -1.022412e+00
+50%   -5.839169e-01  ...               -4.847145e-01
+75%    7.917583e-01  ...                5.906797e-01
+max    2.555391e+01  ...                1.134462e+01
+
+[8 rows x 27 columns]
+--------------------------------------------------------------------------------
+
+### Before PCA ###
+--------------------------------------------------------------------------------
+Total Variance: 22.557886381845606
+--------------------------------------------------------------------------------
+Skewness:
+CNT_CHILDREN                   1.068325
+AMT_INCOME_TOTAL              -0.125825
+AMT_CREDIT                    -0.205658
+AMT_ANNUITY                   -0.178922
+AMT_GOODS_PRICE               -0.008261
+REGION_POPULATION_RELATIVE    -0.220253
+DAYS_BIRTH                    -0.115233
+DAYS_EMPLOYED                  1.519937
+DAYS_REGISTRATION             -0.213336
+DAYS_ID_PUBLISH               -0.098441
+CNT_FAM_MEMBERS                0.180872
+REGION_RATING_CLIENT           1.122752
+REGION_RATING_CLIENT_W_CITY    1.167166
+HOUR_APPR_PROCESS_START       -0.154718
+EXT_SOURCE_2                  -0.084620
+EXT_SOURCE_3                  -0.114395
+OBS_30_CNT_SOCIAL_CIRCLE      -0.211508
+DEF_30_CNT_SOCIAL_CIRCLE       2.403124
+OBS_60_CNT_SOCIAL_CIRCLE      -0.212368
+DEF_60_CNT_SOCIAL_CIRCLE       2.992063
+DAYS_LAST_PHONE_CHANGE        -0.194384
+AMT_REQ_CREDIT_BUREAU_HOUR          NaN
+AMT_REQ_CREDIT_BUREAU_DAY           NaN
+AMT_REQ_CREDIT_BUREAU_WEEK    -1.000000
+AMT_REQ_CREDIT_BUREAU_MON      1.779502
+AMT_REQ_CREDIT_BUREAU_QRT      1.577522
+AMT_REQ_CREDIT_BUREAU_YEAR    -0.211853
+dtype: float64
+--------------------------------------------------------------------------------
+Kurtosis:
+CNT_CHILDREN                  -0.541932
+AMT_INCOME_TOTAL              -0.963488
+AMT_CREDIT                    -0.983101
+AMT_ANNUITY                   -1.053723
+AMT_GOODS_PRICE               -1.032586
+REGION_POPULATION_RELATIVE    -1.075540
+DAYS_BIRTH                    -1.163591
+DAYS_EMPLOYED                  0.508442
+DAYS_REGISTRATION             -1.061338
+DAYS_ID_PUBLISH               -0.858865
+CNT_FAM_MEMBERS               -1.819793
+REGION_RATING_CLIENT          -0.739370
+REGION_RATING_CLIENT_W_CITY   -0.637705
+HOUR_APPR_PROCESS_START       -0.886315
+EXT_SOURCE_2                  -0.855701
+EXT_SOURCE_3                  -1.065492
+OBS_30_CNT_SOCIAL_CIRCLE      -0.485186
+DEF_30_CNT_SOCIAL_CIRCLE       3.775003
+OBS_60_CNT_SOCIAL_CIRCLE      -0.437671
+DEF_60_CNT_SOCIAL_CIRCLE       6.952439
+DAYS_LAST_PHONE_CHANGE        -0.815078
+AMT_REQ_CREDIT_BUREAU_HOUR          NaN
+AMT_REQ_CREDIT_BUREAU_DAY           NaN
+AMT_REQ_CREDIT_BUREAU_WEEK    -2.000000
+AMT_REQ_CREDIT_BUREAU_MON      1.166627
+AMT_REQ_CREDIT_BUREAU_QRT      0.489795
+AMT_REQ_CREDIT_BUREAU_YEAR    -0.596061
+dtype: float64
+--------------------------------------------------------------------------------
